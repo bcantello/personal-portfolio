@@ -1,15 +1,23 @@
-import React from "react";
+import React, {useRef} from "react";
 import Navigation from "../../components/navigation/navigation";
 import Video from "../../assets/Black_-_13495_bugbes.mp4";
 import "./home.css";
 
 export default function Home() {
+	const videoRef = useRef();
+	const setPlayBack = () => {
+		videoRef.current.playbackRate = 0.4;
+	};
+
 	return (
 		<section id="home" className="flex">
 			<div id="videoContainer">
-				<video id="homeVideo" playsInline autoPlay muted loop>
-					<script>document.getElementById('homeVideo').playbackRate = 0.4</script>
-					<source src={Video} type="video/mp4"/>
+				<video
+					id="homeVideo"
+					playsInline autoPlay muted loop
+					ref={videoRef}
+					onCanPlay={() => setPlayBack()}>
+					<source src={Video} type="video/mp4" />
 				</video>
 			</div>
 			<div id="home-content-container">
