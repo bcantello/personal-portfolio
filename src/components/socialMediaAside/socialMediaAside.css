@@ -1,0 +1,29 @@
+.social-aside-container {
+    display: none;
+}
+
+svg:hover {
+    color: green;
+}
+
+@media (min-width: 1024px) {
+    .social-aside-container {
+        display: block;
+        width: 1.5em;
+        position: fixed;
+        bottom: 4em;
+        left: 1.5em;
+        right: auto;
+        z-index: 10;
+        -moz-transition-delay: 1200ms;
+        -webkit-transition-delay: 1200ms;
+        -o-transition-delay: 1200ms;
+        transition-delay: 1200ms;
+    }
+
+    svg {
+        color: #ff3605;
+        fill: currentColor;
+        padding: .6em 0;
+    }
+}

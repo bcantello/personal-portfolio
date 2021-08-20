@@ -1,0 +1,129 @@
+#desktop-nav {
+    display: none;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    position: fixed;
+    background: #1b242f;
+    border-bottom: 3px solid #04c2c9;
+    height: 2em;
+    text-align: left;
+    width: 100vw;
+    z-index: 99;
+}
+
+/*Begin Hamburger Styling*/
+nav ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+}
+nav ul.opening {
+    display: block;
+    height: 30px;
+}
+#hamburger a {
+    font-family: Raleway, sans-serif;
+    color: white;
+    background: #303030;
+    display: block;
+    padding: .3em 4em .3em 1em;
+    font-size: .75em;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+nav a:hover, nav a:focus {
+    color: #ff3605;
+}
+#site-nav--icon {
+    font-size: 1.4em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: rgba(255,255,255,.4);
+}
+.hamburger-toggle {
+    position: absolute;
+    padding: 0.5em 0.5em;
+    top: .5em;
+    right: .5em;
+    cursor: pointer;
+}
+.hamburger, .hamburger::before, .hamburger::after {
+    content: '';
+    display: block;
+    background: #EBEBD3;
+    height: 3px;
+    width: 1em;
+    border-radius: 3px;
+    -webkit-transition:all ease-in-out 350ms;
+    transition:all ease-in-out 350ms;
+}
+.hamburger::before {
+    -webkit-transform: translateY(-7px);
+    transform: translateY(-7px);
+}
+.hamburger::after {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+}
+.open .hamburger {
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+.open .hamburger::before {
+    display: none;
+}
+.open .hamburger::after {
+    -webkit-transform: translateY(-1px) rotate(-90deg);
+    transform: translateY(-1px) rotate(-90deg);
+}
+/*End Hamburger Styling*/
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    nav {
+        height: 1.5em;
+    }
+    .hamburger-toggle {
+        top: .25em;
+    }
+    #hamburger a {
+        font-size: .5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1.1rem;
+    }
+    .active {
+        color: #ff3605;
+    }
+    #desktop-nav {
+        display: flex;
+        width: 100%;
+        max-width: 75vw;
+        font-size: .8rem;
+    }
+    nav a {
+        font-family: Raleway, sans-serif;
+        text-decoration: none;
+        color: #05C2C9;
+        padding-right: 3em;
+        font-size: .5rem;
+    }
+    #desktop-nav a:hover, #desktop-nav a:focus {
+        color: #ff3605;
+    }
+    #hamburger {
+        display: none;
+    }
+}

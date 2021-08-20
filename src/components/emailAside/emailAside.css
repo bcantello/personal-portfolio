@@ -1,0 +1,44 @@
+.email-aside-container {
+    display: none;
+}
+
+@media (min-width: 1024px) {
+    .email-aside-container {
+        display: block;
+        width: 1.5em;
+        position: fixed;
+        bottom: 4em;
+        left: auto;
+        right: 1.5em;
+        z-index: 10;
+        -moz-transition-delay: 1200ms;
+        -webkit-transition-delay: 1200ms;
+        -o-transition-delay: 1200ms;
+        transition-delay: 1200ms;
+    }
+
+    svg {
+        color: #ff3605;
+        fill: currentColor;
+        padding: .6em 0;
+    }
+
+    .email-aside-wrapper {
+        display: flex;
+        flex-direction: column;
+        -webkit-box-align: center;
+        align-items: center;
+        position: relative;
+    }
+    .email-aside-link {
+        text-decoration: none;
+        font-size: 1em;
+        letter-spacing: 0.1em;
+        -webkit-writing-mode: vertical-rl;
+        writing-mode: vertical-rl;
+        color: #ff3605;
+    }
+    .email-aside-link:hover {
+        color: green;
+    }
+}
