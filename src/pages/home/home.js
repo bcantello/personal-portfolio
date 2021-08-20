@@ -1,6 +1,7 @@
 import React from "react";
 import Navigation from "../../components/navigation/navigation";
 import Video from "../../assets/Black_-_13495_bugbes.mp4";
+import "./home.css";
 
 export default function Home() {
 	return (

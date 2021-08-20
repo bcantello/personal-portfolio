@@ -1,0 +1,64 @@
+#home {
+    height: calc(100vh + 52px);
+    background: #0A192F;
+}
+#homeVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0.35;
+}
+#home-content-container {
+    text-align: center;
+    color: #05C2C9;
+    z-index: 10;
+    width: 100%;
+    font-size: 23px;
+    line-height: 1.2em;
+}
+#homeText {
+    margin-bottom: 1em;
+    font-family: Raleway, sans-serif;
+}
+#homeName {
+    color: #ff3605;
+}
+#homeButton {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 12px 15px;
+    position: relative;
+    color: white;
+    background: #05C2C9;
+    box-sizing: inherit;
+    border-radius: 5px;
+    border-color: #05C2C9;
+}
+
+/*#homeText, #homeButton {*/
+/*    -moz-transition-delay: 1000ms;*/
+/*    -webkit-transition-delay: 1000ms;*/
+/*    -o-transition-delay: 1000ms;*/
+/*    transition-delay: 1000ms;*/
+/*}*/
+
+@media (min-width: 767px) and (max-width: 1023px) {
+    #home-content-container {
+        font-size: 40px;
+    }
+    #homeButton {
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 1024px) {
+    #home-content-container {
+        font-size: 50px;
+    }
+    #homeButton {
+        font-size: 25px;
+        font-family: Raleway, sans-serif;
+    }
+}
