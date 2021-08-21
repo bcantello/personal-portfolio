@@ -54,7 +54,7 @@ nav a:hover, nav a:focus {
     right: .5em;
     cursor: pointer;
 }
-.hamburger, .hamburger::before, .hamburger::after {
+.hamburger-icon, .hamburger-icon::before, .hamburger-icon::after {
     content: '';
     display: block;
     background: #EBEBD3;
@@ -64,22 +64,22 @@ nav a:hover, nav a:focus {
     -webkit-transition:all ease-in-out 350ms;
     transition:all ease-in-out 350ms;
 }
-.hamburger::before {
+.hamburger-icon::before {
     -webkit-transform: translateY(-7px);
     transform: translateY(-7px);
 }
-.hamburger::after {
+.hamburger-icon::after {
     -webkit-transform: translateY(4px);
     transform: translateY(4px);
 }
-.open .hamburger {
+.opening .hamburger-icon {
     -webkit-transform: rotate(45deg);
     transform: rotate(45deg);
 }
-.open .hamburger::before {
+.opening .hamburger-icon::before {
     display: none;
 }
-.open .hamburger::after {
+.opening .hamburger-icon::after {
     -webkit-transform: translateY(-1px) rotate(-90deg);
     transform: translateY(-1px) rotate(-90deg);
 }
@@ -93,7 +93,7 @@ nav a:hover, nav a:focus {
         top: .25em;
     }
     #hamburger a {
-        font-size: .5rem;
+        font-size: 1rem;
     }
 }
 
@@ -109,8 +109,9 @@ nav a:hover, nav a:focus {
     }
     #desktop-nav {
         display: flex;
+        justify-content: flex-end;
         width: 100%;
-        max-width: 75vw;
+        max-width: 100vw;
         font-size: .8rem;
     }
     nav a {

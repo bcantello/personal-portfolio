@@ -1,7 +1,24 @@
-import React from "react";
+import React, {useContext} from "react";
+import {UniversalContext} from "../../App";
 import "./navigation.css";
 
 export default function Navigation() {
+	const context = useContext(UniversalContext);
+
+	// Open and close hamburger menu
+	const handleHamburgerToggle = () => {
+		let toggle = document.getElementById('toggle');
+		let burger_icon = document.getElementsByClassName('hamburger-toggle');
+		if (toggle.className === "open") {
+			context.setHamburgerToggle("opening");
+			context.setHamburgerToggleIcon('hamburger-toggle opening');
+		}
+		else {
+			context.setHamburgerToggle("open");
+			context.setHamburgerToggleIcon('hamburger-toggle');
+		}
+	};
+
 	return (
 		<nav id="site-nav">
 			<div id="desktop-nav">
@@ -12,15 +29,15 @@ export default function Navigation() {
 				<a href="#contact" className="animation-element fade-down" id="contact-link">Contact</a>
 			</div>
 			<div id="hamburger">
-				<ul className="open">
-					<li><a href="#home" className="menu-toggle">Home</a></li>
-					<li><a href="#about" className="menu-toggle">About</a></li>
-					<li><a href="#projects" className="menu-toggle">Projects</a></li>
-					{/*<li><a href="#blog" class="menu-toggle">Blog</a></li>*/}
-					<li><a href="#contact" className="menu-toggle">Contact</a></li>
+				<ul id={'toggle'} className={context.hamburgerToggle}>
+					<li><a href="#home" className="menu-toggle" onClick={handleHamburgerToggle}>Home</a></li>
+					<li><a href="#about" className="menu-toggle" onClick={handleHamburgerToggle}>About</a></li>
+					<li><a href="#projects" className="menu-toggle" onClick={handleHamburgerToggle}>Projects</a></li>
+					{/*<li><a href="#blog" class="menu-toggle" onClick={handleHamburgerToggle}>Blog</a></li>*/}
+					<li><a href="#contact" className="menu-toggle" onClick={handleHamburgerToggle}>Contact</a></li>
 				</ul>
-				<div className="hamburger-toggle">
-					<div className="hamburger"/>
+				<div className={context.hamburgerToggleIcon} onClick={handleHamburgerToggle}>
+					<div className="hamburger-icon"/>
 				</div>
 			</div>
 		</nav>
