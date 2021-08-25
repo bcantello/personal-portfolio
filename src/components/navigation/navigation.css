@@ -59,7 +59,7 @@ nav a:hover, nav a:focus {
     display: block;
     background: #EBEBD3;
     height: 3px;
-    width: 1em;
+    width: 1.75em;
     border-radius: 3px;
     -webkit-transition:all ease-in-out 350ms;
     transition:all ease-in-out 350ms;

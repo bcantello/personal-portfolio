@@ -8,7 +8,6 @@ export default function Navigation() {
 	// Open and close hamburger menu
 	const handleHamburgerToggle = () => {
 		let toggle = document.getElementById('toggle');
-		let burger_icon = document.getElementsByClassName('hamburger-toggle');
 		if (toggle.className === "open") {
 			context.setHamburgerToggle("opening");
 			context.setHamburgerToggleIcon('hamburger-toggle opening');
