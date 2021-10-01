@@ -65,12 +65,12 @@
 
           .project-git {
             width: 1.5em;
-            padding: 0 1em 0 0;
+            padding-left: 1em;
           }
-        }
 
-        .project-git:hover {
-          color: darkgreen;
+          .project-external {
+            width: 1.5em;
+          }
         }
       }
 
@@ -100,10 +100,6 @@
 
           .project-links {
             justify-content: left;
-          }
-
-          .project-git {
-            padding: 0 0 1em 0;
           }
         }
 

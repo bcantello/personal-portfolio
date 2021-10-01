@@ -1,6 +1,7 @@
 import React from "react";
 
 export default function GithubIcon(props) {
+	// If a specific project repo link is passed as props, use that. Otherwise default to my github profile link
 	const link = props.link ? props.link : "https://github.com/bcantello";
 
 	return (
@@ -14,5 +15,5 @@ export default function GithubIcon(props) {
 				</svg>
 			</div>
 		</a>
-	)
+	);
 };
