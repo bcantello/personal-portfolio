@@ -8,7 +8,7 @@ export default function ProjectsFilterListItem(props) {
 	const projectImages = [];
 	const projectLinks = [
 		<div className={'project-external'}>
-			<ExternalLinkIcon link={projectElements[3]['url']} />
+			<ExternalLinkIcon link={projectElements[3]['url']} className={'external'} />
 		</div>
 	];
 	const projectDetails = [

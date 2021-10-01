@@ -65,7 +65,7 @@
 
           .project-git {
             width: 1.5em;
-            padding-left: 1em;
+            padding: 0 0 1em 1em;
           }
 
           .project-external {
@@ -82,19 +82,7 @@
         .project {
           order: 1;
 
-          .featured-project {
-            text-align: left;
-          }
-
-          .project-title {
-            text-align: left;
-          }
-
-          .project-description {
-            text-align: left;
-          }
-
-          .project-technologies {
+          .featured-project, .project-title, .project-description, .project-technologies {
             text-align: left;
           }
 

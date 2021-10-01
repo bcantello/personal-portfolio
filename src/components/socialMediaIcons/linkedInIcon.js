@@ -1,10 +1,19 @@
 import React from "react";
 
-export default function LinkedInIcon() {
+/**
+ * Renders a LinkedIn social media icon. A className prop can be passed, allowing for different styling to be
+ * applied depending on where it is being used.
+ * @param props className
+ * @returns {JSX.Element} LinkedIn Icon
+ * @constructor
+ */
+export default function LinkedInIcon(props) {
+	const className = props.className;
+
 	return (
 		<a href="https://www.linkedin.com/in/brandon-cantello-889b62148" target="_blank"
-		   rel="nofollow noopener noreferrer" aria-label="LinkedIn" className="social-aside-icon">
-			<div className="social-aside-icon">
+		   rel="nofollow noopener noreferrer" aria-label="LinkedIn" className={className}>
+			<div className={className}>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 430.117 430.117">
 					<title>LinkedIn</title>
 					<path

@@ -1,10 +1,19 @@
 import React from "react";
 
-export default function InstagramIcon() {
+/**
+ * Renders an Instagram social media icon. A className prop can be passed, allowing for different styling to be
+ * applied depending on where it is being used.
+ * @param props className
+ * @returns {JSX.Element} Instagram Icon
+ * @constructor
+ */
+export default function InstagramIcon(props) {
+	const className = props.className;
+
 	return (
 		<a href="https://www.instagram.com/brandoncantello" target="_blank"
-		   rel="nofollow noopener noreferrer" aria-label="Instagram" className="social-aside-icon">
-			<div className="social-aside-icon">
+		   rel="nofollow noopener noreferrer" aria-label="Instagram" className={className}>
+			<div className={className}>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 					<title>Instagram</title>
 					<g>

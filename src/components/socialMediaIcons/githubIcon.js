@@ -1,13 +1,21 @@
 import React from "react";
 
+/**
+ * Renders a GitHub social media icon. Props for a link and a className can be passed, allowing for the icon to
+ * point to different repositories, and for styling to be applied differently depending on where it is being used.
+ * @param props Accepts a 'link' prop and a 'className' prop
+ * @returns {JSX.Element} GitHub icon
+ * @constructor
+ */
 export default function GithubIcon(props) {
 	// If a specific project repo link is passed as props, use that. Otherwise default to my github profile link
 	const link = props.link ? props.link : "https://github.com/bcantello";
+	const className = props.className;
 
 	return (
 		<a href={link} target="_blank" rel="nofollow noopener noreferrer"
-		   aria-label="GitHub" className="social-aside-icon">
-			<div className="social-aside-icon">
+		   aria-label="GitHub" className={className}>
+			<div className={className}>
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 438.549 438.549">
 					<title>GitHub</title>
 					<path

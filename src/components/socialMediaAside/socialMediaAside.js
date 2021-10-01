@@ -1,13 +1,12 @@
 import React from "react";
 import "./socialMediaAside.css";
 import GithubIcon from "../socialMediaIcons/githubIcon";
-import CodepenIcon from "../socialMediaIcons/codepenIcon";
 import LinkedInIcon from "../socialMediaIcons/linkedInIcon";
 import InstagramIcon from "../socialMediaIcons/instagramIcon";
 
 /**
  * Renders vertical social media links on the side of the page.
- * @returns {JSX.Element}
+ * @returns {JSX.Element} Social media side bar
  * @constructor
  */
 export default function SocialMediaAside() {
@@ -15,16 +14,13 @@ export default function SocialMediaAside() {
 		<div className="social-aside-container animation-element fade-up">
 			<ul className="social-links">
 				<li>
-					<GithubIcon/>
+					<GithubIcon className={'social-aside-icon'}/>
 				</li>
 				<li>
-					<CodepenIcon/>
+					<LinkedInIcon className={'social-aside-icon'}/>
 				</li>
 				<li>
-					<LinkedInIcon/>
-				</li>
-				<li>
-					<InstagramIcon/>
+					<InstagramIcon className={'social-aside-icon'}/>
 				</li>
 			</ul>
 		</div>
