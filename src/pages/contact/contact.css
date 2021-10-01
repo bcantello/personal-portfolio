@@ -1,5 +1,5 @@
 #contact {
-    background: white;
+    background: #f7f7f7;
     padding-top: 0;
     padding-bottom: 0;
 }
@@ -14,7 +14,7 @@
     border-color: white;
 }
 #contact-angled-feature {
-    border-top: 100px solid white;
+    border-top: 100px solid #f7f7f7;
     border-left: solid #374352 50vw;
     border-right: solid #374352 50vw;
 }

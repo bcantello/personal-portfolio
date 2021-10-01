@@ -17,6 +17,7 @@
     opacity: 0;
     transform: translateX(100%);
     transition: opacity 1s, transform 1s;
+    z-index: 3;
 
     &.show-image {
       transform: translateX(0);

@@ -18,7 +18,8 @@
     }
 
     svg {
-        color: #ff3605;
+        /*color: #ff3605;*/
+        color: #009176;
         fill: currentColor;
         padding: .6em 0;
     }
@@ -36,9 +37,10 @@
         letter-spacing: 0.1em;
         -webkit-writing-mode: vertical-rl;
         writing-mode: vertical-rl;
-        color: #ff3605;
+        /*color: #ff3605;*/
+        color: #009176;
     }
     .email-aside-link:hover {
-        color: #1b242f;
+        color: #05C2C9;
     }
 }

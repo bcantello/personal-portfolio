@@ -1,8 +1,8 @@
 #projects {
-  background: white;
+  background: #f7f7f7;
 
   #blue-skewy {
-    background: #54c0de;
+    background: #020f22;
     height: 79%;
     left: 0;
     position: absolute;
@@ -41,22 +41,33 @@
 
         .featured-project {
           text-align: right;
+          color: #54c0de;
         }
 
         .project-title {
           font-size: 2em;
           text-align: right;
           padding-bottom: .5em;
+          color: #a8b2d1;
         }
 
         .project-description {
           text-align: right;
+          background-color: #08162f;
+          color: #a8b2d1;
+          padding: 25px;
+          z-index: 2;
+          position: relative;
         }
 
         .project-technologies {
           padding: 1em 0;
           text-align: right;
           word-spacing: 1em;
+
+          &:nth-child(-n+2) {
+            color: #a8b2d1;
+          }
         }
 
         .project-links {

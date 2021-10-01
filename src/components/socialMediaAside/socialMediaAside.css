@@ -3,7 +3,7 @@
 }
 
 svg:hover {
-    color: #1b242f;
+    color: #05C2C9;
 }
 
 @media (min-width: 1024px) {
@@ -22,7 +22,7 @@ svg:hover {
     }
 
     svg {
-        color: #ff3605;
+        color: #009176;
         fill: currentColor;
         padding: .6em 0;
     }
