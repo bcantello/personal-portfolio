@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, {useEffect, useState} from "react";
 import "./imageSlider.scss";
 
 /**
@@ -11,6 +11,15 @@ import "./imageSlider.scss";
 export default function ImageSlider(props) {
 	const images = props.images;
 	const [currentImageID, setCurrentImageID] = useState(1);
+
+	useEffect(() => {
+		const interval = setInterval(() => {
+			images.length > currentImageID
+				? setCurrentImageID((prev) => prev + 1)
+				: setCurrentImageID(1);
+		}, 15000);
+		return () => clearInterval(interval);
+	});
 
 	function sliderHandler(id) {
 		setCurrentImageID(id);

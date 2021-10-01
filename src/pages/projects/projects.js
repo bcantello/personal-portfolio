@@ -1,5 +1,5 @@
 import React from "react";
-import "./projects.css";
+import "./projects.scss";
 import ProjectsFilterList from "./projectsFilterList";
 
 export default function Projects() {
