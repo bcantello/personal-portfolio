@@ -23,25 +23,29 @@
     flex-wrap: wrap;
     justify-content: center;
     position: relative;
-    max-width: 1200px;
     margin: 1em auto;
 
     .project-wrapper {
-      height: 30vh;
+      height: 280px;
       width: 100%;
       position: relative;
-      padding: 1em 3em;
+      padding: 3em;
       display: flex;
       flex-direction: row;
       justify-content: center;
 
+      &:nth-of-type(1) {
+        padding-top: .5em;
+      }
+
       .project {
         width: 40%;
-        padding: 3em;
+        padding: 1em 3em 3em 3em;
 
         .featured-project {
           text-align: right;
           color: #54c0de;
+          font-size: .75em;
         }
 
         .project-title {
@@ -56,18 +60,20 @@
           background-color: #08162f;
           color: #a8b2d1;
           padding: 25px;
+          margin-bottom: 25px;
           z-index: 2;
           position: relative;
+
+          @media (min-width: 1024px) {
+            float: right;
+            width: 415px;
+          }
         }
 
         .project-technologies {
-          padding: 1em 0;
+          //padding: 1em 0;
           text-align: right;
           word-spacing: 1em;
-
-          &:nth-child(-n+2) {
-            color: #a8b2d1;
-          }
         }
 
         .project-links {
@@ -100,6 +106,10 @@
           .project-links {
             justify-content: left;
           }
+
+          .project-description {
+            float: left;
+          }
         }
 
         @media screen and (max-width: 815px) {
@@ -118,7 +128,8 @@
     }
     @media (min-width: 1024px) {
       padding-top: 3em;
-      max-width: 80vw;
+      width: 80vw;
+      max-width: 1080px;
     }
   }
 
