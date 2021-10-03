@@ -8,13 +8,10 @@ footer {
     justify-content: space-around;
 }
 .footer-social-icon {
-    background: transparent;
     cursor: pointer;
     height: 25px;
-    margin: 0 15px;
-    overflow: hidden;
+    padding: 0 20px 0 10px;
     position: relative;
-    text-align: center;
     width: 25px;
 }
 svg {
@@ -61,7 +58,8 @@ svg:hover {
         padding-top: .5em;
     }
     svg {
-        color: #ff3605;
+        /*color: #ff3605;*/
+        color: #009176;
         fill: currentColor;
         padding: .6em 0;
     }

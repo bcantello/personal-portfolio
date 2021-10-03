@@ -1,0 +1,205 @@
+#projects {
+  background: #f7f7f7;
+
+  #blue-skewy {
+    background: #020f22;
+    height: 91%;
+    left: 0;
+    position: absolute;
+    transform: skewY(-6.5deg);
+    width: 100%;
+
+    @media (min-width: 767px) and (max-width: 1023px) {
+      height: 87%;
+    }
+    @media (min-width: 1024px) {
+      height: 77%;
+    }
+  }
+
+  #gallery {
+    transform: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+    margin: 1em auto;
+
+    .project-wrapper {
+      height: 500px;
+      width: 100%;
+      position: relative;
+      padding: 3em;
+      justify-content: center;
+
+      @media (min-width: 767px) and (max-width: 1023px) {
+        height: 560px;
+      }
+
+      .mobile-project-title-wrapper {
+        padding: 1em 0;
+
+        .mobile-featured-project {
+          text-align: left;
+          color: #54c0de;
+          font-size: .75em;
+        }
+
+        .mobile-project-title {
+          font-size: 2em;
+          text-align: left;
+          padding-bottom: .25em;
+          color: #a8b2d1;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        height: 280px;
+
+        .mobile-project-title-wrapper {
+          display: none;
+        }
+      }
+
+      &:nth-of-type(1) {
+        padding-top: .5em;
+
+        @media (min-width: 767px) and (max-width: 1023px) {
+          padding-top: 1.5em;
+        }
+      }
+
+      .project {
+        width: 100%;
+
+        @media (min-width: 1024px) {
+          width: 40%;
+          padding: 1em 3em 3em 3em;
+        }
+
+        .featured-project {
+          text-align: right;
+          color: #54c0de;
+          font-size: .75em;
+          display: none;
+
+          @media (min-width: 1024px) {
+            display: block;
+          }
+        }
+
+        .project-title {
+          font-size: 2em;
+          text-align: right;
+          padding-bottom: .5em;
+          color: #a8b2d1;
+          display: none;
+
+          @media (min-width: 1024px) {
+            display: block;
+          }
+        }
+
+        .project-description {
+          text-align: left;
+          background-color: #08162f;
+          color: #a8b2d1;
+          padding: 25px;
+          margin: 25px 0;
+          z-index: 2;
+          position: relative;
+
+          @media (min-width: 1024px) {
+            float: right;
+            text-align: right;
+            width: 415px;
+            margin-top: 0;
+          }
+        }
+
+        .project-technologies {
+          text-align: left;
+          word-spacing: .75em;
+
+          @media (min-width: 1024px) {
+            text-align: right;
+            word-spacing: 1em;
+          }
+        }
+
+        .project-links {
+          display: flex;
+          justify-content: right;
+          margin: 1em 0;
+
+          @media (min-width: 767px) and (max-width: 1023px) {
+            float: right;
+            margin: -1.5em 0;
+          }
+
+          .project-git {
+            width: 1.5em;
+            padding: 0 0 1em 1em;
+          }
+
+          .project-external {
+            width: 1.5em;
+          }
+        }
+      }
+
+      &:nth-child(even) {
+        //alternating text + image (left vs right)
+        .images {
+          order: 2;
+        }
+        .project {
+          order: 1;
+
+          .featured-project, .project-title, .project-description, .project-technologies {
+            text-align: left;
+          }
+
+          .project-links {
+            @media (min-width: 1024px) {
+              justify-content: left;
+            }
+          }
+
+          .project-description {
+            float: left;
+          }
+        }
+
+        @media screen and (max-width: 815px) {
+          .images {
+            order: unset;
+          }
+          .project {
+            order: unset;
+          }
+        }
+      }
+    }
+
+    @media (min-width: 767px) and (max-width: 1023px) {
+      width: 97%;
+    }
+    @media (min-width: 1024px) {
+      padding-top: 3em;
+      width: 80vw;
+      max-width: 1080px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    #projects .header {
+      padding-top: .7em;
+    }
+    #projects .header-bar {
+      padding-bottom: 7em;
+    }
+  }
+}
