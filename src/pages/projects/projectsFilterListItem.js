@@ -35,6 +35,10 @@ export default function ProjectsFilterListItem(props) {
 	return (
 		<>
 			<div className={'project-wrapper'}>
+				<div className={'mobile-project-title-wrapper'}>
+					<div className={'mobile-featured-project'}> Featured Project </div>
+					<div className={'mobile-project-title'}> {projectElements[3]['title']} </div>
+				</div>
 				<ImageSlider images={projectImages}/>
 				<div className="project">
 					<div className={'featured-project'}> Featured Project </div>

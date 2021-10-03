@@ -26,7 +26,7 @@ export const projectInfoArray = [
 				"and automation, we make otherwise separate systems work seamlessly together.",
 			url: "https://www.cartrover.com/",
 			gitRepo: null,
-			technologies: "PHP SQL HTML XML GraphQL",
+			technologies: "PHP SQL XML GraphQL",
 		}
 	],
 	[
@@ -79,7 +79,7 @@ export const projectInfoArray = [
 				"Earth-Like planets around nearby stars in the Milky Way Galaxy.",
 			url: "http://spacelab.space/",
 			gitRepo: "https://github.com/bcantello/spacelab-react",
-			technologies: "ReactJS HTML CSS SCSS Bootstrap",
+			technologies: "ReactJS HTML SCSS Bootstrap",
 		}
 	]
 ];

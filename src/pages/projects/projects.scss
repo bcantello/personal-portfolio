@@ -3,7 +3,7 @@
 
   #blue-skewy {
     background: #020f22;
-    height: 79%;
+    height: 91%;
     left: 0;
     position: absolute;
     transform: skewY(-6.5deg);
@@ -26,26 +26,60 @@
     margin: 1em auto;
 
     .project-wrapper {
-      height: 280px;
+      height: 500px;
       width: 100%;
       position: relative;
       padding: 3em;
-      display: flex;
-      flex-direction: row;
       justify-content: center;
+
+      .mobile-project-title-wrapper {
+        padding: 1em 0;
+
+        .mobile-featured-project {
+          text-align: left;
+          color: #54c0de;
+          font-size: .75em;
+        }
+
+        .mobile-project-title {
+          font-size: 2em;
+          text-align: left;
+          padding-bottom: .25em;
+          color: #a8b2d1;
+        }
+      }
+
+      @media (min-width: 1024px) {
+        display: flex;
+        flex-direction: row;
+        height: 280px;
+
+        .mobile-project-title-wrapper {
+          display: none;
+        }
+      }
 
       &:nth-of-type(1) {
         padding-top: .5em;
       }
 
       .project {
-        width: 40%;
-        padding: 1em 3em 3em 3em;
+        width: 100%;
+
+        @media (min-width: 1024px) {
+          width: 40%;
+          padding: 1em 3em 3em 3em;
+        }
 
         .featured-project {
           text-align: right;
           color: #54c0de;
           font-size: .75em;
+          display: none;
+
+          @media (min-width: 1024px) {
+            display: block;
+          }
         }
 
         .project-title {
@@ -53,32 +87,44 @@
           text-align: right;
           padding-bottom: .5em;
           color: #a8b2d1;
+          display: none;
+
+          @media (min-width: 1024px) {
+            display: block;
+          }
         }
 
         .project-description {
-          text-align: right;
+          text-align: left;
           background-color: #08162f;
           color: #a8b2d1;
           padding: 25px;
-          margin-bottom: 25px;
+          margin: 25px 0;
           z-index: 2;
           position: relative;
 
           @media (min-width: 1024px) {
             float: right;
+            text-align: right;
             width: 415px;
+            margin-top: 0;
           }
         }
 
         .project-technologies {
-          //padding: 1em 0;
-          text-align: right;
-          word-spacing: 1em;
+          text-align: left;
+          word-spacing: .75em;
+
+          @media (min-width: 1024px) {
+            text-align: right;
+            word-spacing: 1em;
+          }
         }
 
         .project-links {
           display: flex;
           justify-content: right;
+          margin: 1em 0;
 
           .project-git {
             width: 1.5em;
@@ -104,7 +150,9 @@
           }
 
           .project-links {
-            justify-content: left;
+            @media (min-width: 1024px) {
+              justify-content: left;
+            }
           }
 
           .project-description {
