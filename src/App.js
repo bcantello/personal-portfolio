@@ -5,7 +5,7 @@ import EmailAside from "./components/emailAside/emailAside";
 import Home from "./pages/home/home";
 import About from "./pages/about/about";
 import Projects from "./pages/projects/projects";
-import Contact from "./pages/contact/contact";
+import FormspreeContact from "./pages/contact/formspreeContact";
 import Footer from "./components/footer/footer";
 
 function App() {
@@ -28,7 +28,7 @@ function App() {
 					<Home/>
 					<About/>
 					<Projects/>
-					<Contact/>
+					<FormspreeContact/>
 					<Footer/>
 				</UniversalContext.Provider>
 			</div>
