@@ -56,6 +56,11 @@ textarea {
     margin-top: 5px;
     float: right;
 }
+#contact-button:hover {
+    cursor: pointer;
+    color: #54c0de;
+    border: solid #54c0de 2px;
+}
 #my-form-status {
     font-size: 1em;
     color: #05C2C9;
