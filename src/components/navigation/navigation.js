@@ -1,9 +1,22 @@
 import React, {useContext} from "react";
+import {Link} from "react-scroll";
 import {UniversalContext} from "../../App";
 import "./navigation.css";
 
 export default function Navigation() {
 	const context = useContext(UniversalContext);
+
+	// Creates nave bar link
+	const navLink = (to, name) => [
+		<Link
+			activeClass="active-nav"
+			to={to}
+			spy={true}
+			smooth={true}
+			offset={-70}
+			duration={1000}
+		> {name} </Link>
+	];
 
 	// Open and close hamburger menu
 	const handleHamburgerToggle = () => {
@@ -21,19 +34,25 @@ export default function Navigation() {
 	return (
 		<nav id="site-nav">
 			<div id="desktop-nav">
-				<a href="#home" className="animation-element fade-down active">Home</a>
-				<a href="#about" className="animation-element fade-down" id="about-link">About</a>
-				<a href="#projects" className="animation-element fade-down" id="projects-link">Projects</a>
-				{/*<a href="#blog" class="animation-element fade-down" id="blog-link">Blog</a>*/}
-				<a href="#contact" className="animation-element fade-down" id="contact-link">Contact</a>
+				{navLink("home", "Home")}
+				{navLink("about", "About")}
+				{navLink("projects", "Projects")}
+				{navLink("contact", "Contact")}
 			</div>
 			<div id="hamburger">
 				<ul id={'toggle'} className={context.hamburgerToggle}>
-					<li><a href="#home" className="menu-toggle" onClick={handleHamburgerToggle}>Home</a></li>
-					<li><a href="#about" className="menu-toggle" onClick={handleHamburgerToggle}>About</a></li>
-					<li><a href="#projects" className="menu-toggle" onClick={handleHamburgerToggle}>Projects</a></li>
-					{/*<li><a href="#blog" class="menu-toggle" onClick={handleHamburgerToggle}>Blog</a></li>*/}
-					<li><a href="#contact" className="menu-toggle" onClick={handleHamburgerToggle}>Contact</a></li>
+					<li>
+						{navLink("home", "Home")}
+					</li>
+					<li>
+						{navLink("about", "About")}
+					</li>
+					<li>
+						{navLink("projects", "Projects")}
+					</li>
+					<li>
+						{navLink("contact", "Contact")}
+					</li>
 				</ul>
 				<div className={context.hamburgerToggleIcon} onClick={handleHamburgerToggle}>
 					<div className="hamburger-icon"/>
