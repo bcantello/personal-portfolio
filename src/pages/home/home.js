@@ -1,4 +1,5 @@
 import React, {useRef} from "react";
+import {Link} from "react-scroll";
 import Navigation from "../../components/navigation/navigation";
 import Video from "../../assets/Black_-_13495_bugbes.mp4";
 import "./home.css";
@@ -28,11 +29,17 @@ export default function Home() {
 					<span>Hi, my name is </span>
 					<span id="homeName">Brandon Cantello</span><span>.</span>
 					<br/>
-						<span>I build things for the web.</span>
+					<span>I build things for the web.</span>
 				</div>
-				<a id="homeButton" className="animation-element appear" href="#projects">
-					View my work
-				</a>
+				<Link
+					id="homeButton"
+					activeClass="active-nav"
+					to="projects"
+					spy={true}
+					smooth={true}
+					offset={-70}
+					duration={1000}
+				> View my work </Link>
 			</div>
 		</section>
 	);
