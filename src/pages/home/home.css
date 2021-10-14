@@ -40,14 +40,8 @@
 #homeButton:hover {
     color: #05C2C9;
     background: white;
+    cursor: pointer;
 }
-
-/*#homeText, #homeButton {*/
-/*    -moz-transition-delay: 1000ms;*/
-/*    -webkit-transition-delay: 1000ms;*/
-/*    -o-transition-delay: 1000ms;*/
-/*    transition-delay: 1000ms;*/
-/*}*/
 
 @media (min-width: 767px) and (max-width: 1023px) {
     #home-content-container {

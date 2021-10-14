@@ -115,14 +115,21 @@ nav a:hover, nav a:focus {
         font-size: .8rem;
     }
     nav a {
+        height: 2.5em;
         font-family: Raleway, sans-serif;
         text-decoration: none;
         color: #05C2C9;
-        padding-right: 3em;
+        margin-right: 3em;
         font-size: 1rem;
     }
     #desktop-nav a:hover, #desktop-nav a:focus {
         color: #ff3605;
+        border-bottom: solid 1px #ff3605;
+    }
+
+    .active-nav {
+        color: #ff3605;
+        border-bottom: solid 1px #ff3605;
     }
     #hamburger {
         display: none;

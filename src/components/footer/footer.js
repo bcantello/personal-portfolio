@@ -19,7 +19,7 @@ export default function Footer() {
 			</div>
 			<div id="footer-copyright-container">
 				<div id="footnote">
-					Designed and built by Brandon Cantello <span>&copy 2020</span>
+					Designed and built by Brandon Cantello <span>&copy; 2020</span>
 				</div>
 			</div>
 		</footer>
