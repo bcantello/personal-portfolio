@@ -52,7 +52,8 @@ i {
     color: #05C2C9;
 }
 #background-description {
-    width: 90%;
+    width: 85%;
+    text-align: left;
 }
 #background-description a {
     color: #ff3605;
