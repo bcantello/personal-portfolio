@@ -38,6 +38,7 @@ export default function About() {
 							<img
 								src="https://res.cloudinary.com/bcantello/image/upload/v1583869472/profileImage_fhbk6l.png"
 								id="headshot"
+								alt={"headshot"}
 								className="animation-element slide-right"/>
 							<div id="about-content-text" className="flex animation-element slide-left">
 								<div id="background-description" className="general-text">
