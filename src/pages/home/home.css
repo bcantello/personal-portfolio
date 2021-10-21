@@ -1,5 +1,5 @@
 #home {
-    height: calc(100vh + 52px);
+    height: calc(100vh - 52px);
     background: #0A192F;
 }
 #homeVideo {
