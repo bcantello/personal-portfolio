@@ -63,6 +63,8 @@ i {
 }
 #tech-text {
     margin: 20px 0 0 0;
+    width: 85%;
+    text-align: left;
 }
 .about-skills-container {
     display: grid;
@@ -93,6 +95,12 @@ i {
     }
     .about-icon {
         width: 200px;
+    }
+
+    #tech-text {
+        margin: 20px 0 0 0;
+        width: 90%;
+        text-align: center;
     }
 }
 
@@ -137,5 +145,6 @@ i {
     }
     #tech-text {
         width: 100%;
+        text-align: center;
     }
 }

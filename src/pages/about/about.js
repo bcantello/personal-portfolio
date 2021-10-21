@@ -41,30 +41,48 @@ export default function About() {
 								className="animation-element slide-right"/>
 							<div id="about-content-text" className="flex animation-element slide-left">
 								<div id="background-description" className="general-text">
-									Shortly after graduating from the
-									<a href="https://www.physics.ucsb.edu/"
-									   target="_blank"
-									   rel="nofollow noopener noreferrer">University of California Santa Barbara</a>
-									, I joined the engineering team at
-									<a href="https://www.payjunction.com/payments/"
-									   target="_blank"
-									   rel="nofollow noopener noreferrer">PayJunction</a>
-									as an entry level software engineer. While there I further honed my skills as an
-									engineer in a test driven development environment.
+									I was introduced to programming as I was completing my Physics degree at the
+									<a
+										href="https://www.physics.ucsb.edu/"
+										target="_blank"
+										rel="nofollow noopener noreferrer"> University of California Santa Barbara</a>
+									. I immediately knew that whether paid or unpaid, I would be coding for the rest of
+									my life!
+									<br/>
+									<br/>
+									Jump forward a few years and I have had the opportunity to work for
+									<a
+										href="https://www.payjunction.com/payments/"
+										target="_blank"
+										rel="nofollow noopener noreferrer"> a payment processing gateway </a>
+									,
+									<a
+										href="http://spacelab.space/"
+										target="_blank"
+										rel="nofollow noopener noreferrer"> a STEAM inclusion non profit </a>
+									, and
+									<a
+										href="https://www.peoplesvoiceproject.com/"
+										target="_blank"
+										rel="nofollow noopener noreferrer"> a student lead voting activism initiative</a>
+									. Currently I am a Developer at CIO Technologies where I work on their
+									<a
+										href="https://www.cartrover.com"
+										target="_blank"
+										rel="nofollow noopener noreferrer"> CartRover </a>
+									platform, focussing on the seamless integration of unrelated order management
+									platforms and warehouse management systems.
 								</div>
 								<div className="general-text" id="tech-text">
-									Some technologies I've been working with lately:
+									A few of the technologies I've been working with lately are:
 								</div>
 								<ul className="about-skills-container general-text">
-									<li className="about-skills-item">Java</li>
+									<li className="about-skills-item">React</li>
 									<li className="about-skills-item">JavaScript</li>
 									<li className="about-skills-item">HTML & CSS</li>
-									<li className="about-skills-item">React</li>
+									<li className="about-skills-item">PHP</li>
 									<li className="about-skills-item">Python</li>
-									<li className="about-skills-item">Django</li>
-									<li className="about-skills-item">Node.js</li>
-									<li className="about-skills-item">Express</li>
-									<li className="about-skills-item">Mongo</li>
+									<li className="about-skills-item">Java</li>
 									<li className="about-skills-item">SQL</li>
 								</ul>
 							</div>
