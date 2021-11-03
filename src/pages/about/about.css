@@ -14,6 +14,8 @@
 #headshot {
     width: 250px;
     margin: 85px 0 15px 0;
+    border-top-left-radius: 45%;
+    border-bottom-right-radius: 45%;
 }
 .headshot-container ul {
     margin-block-start: 1em;
