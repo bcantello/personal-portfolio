@@ -8,6 +8,8 @@ export default function BlogList() {
 	const blogs = context.blogArray.items;
 	let blogArray;
 
+	// TODO: Add button to slide in 3 new blog tiles.
+	//  Add default image for blogs with no content image.
 	if (blogs !== undefined) {
 		let recentBlogs = [];
 		for (let i = 0; i < 3; i++) {

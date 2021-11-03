@@ -2,21 +2,13 @@ import React from "react";
 import "./blog.scss";
 
 export default function BlogListItem(props) {
-
-	console.log(props.element);
-
 	const blogElements = props.element;
-
-	console.log(blogElements.content);
-
 	let content = blogElements.content;
 	let imageURL;
 
 	if (content !== undefined) {
 		content = content.toString();
 		imageURL = content.substring(content.indexOf("img src=") + 9, content.lastIndexOf("width") - 2);
-		console.log(content.substring(content.indexOf("img src=") + 9,
-			content.lastIndexOf("width") - 2));
 	}
 
 	return (
