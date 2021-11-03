@@ -3,27 +3,40 @@
 
   #blog-tile-container {
     width: 90%;
-    max-width: 1400px;
+    max-width: 1300px;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     margin: auto;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+    }
 
     .blog-element-wrapper {
       text-decoration: none;
       color: #444649;
 
+      .blog-element-wrapper:hover {
+        cursor: pointer;
+      }
+
       .blog-element-container {
-        width: 350px;
+        width: 300px;
         height: 300px;
-        margin: 1em;
+        margin: 1em auto;
         border: solid 2px #444649;
         border-radius: 10px;
         box-shadow: 25px 25px 13px -20px rgba(0,0,0,0.95);
         -webkit-transition: width .5s ease, height .5s ease, box-shadow .25s;
 
-        .blog-element-container:hover {
-          box-shadow: 25px 25px 13px -20px rgba(0,0,0,0.95);
-          -webkit-transition: box-shadow .25s;
+        @media (min-width: 767px) and (max-width: 1023px) {
+          width: 350px;
+          height: 300px;
+        }
+        @media (min-width: 1024px) {
+          width: 350px;
+          height: 300px;
         }
 
         .blog-image {
