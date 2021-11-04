@@ -12,7 +12,10 @@ export default function BlogListItem(props) {
 	}
 
 	return (
-		<a className={"blog-element-wrapper"} href={blogElements.link} target="_blank" rel="nofollow noopener noreferrer">
+		<a className={"blog-element-wrapper"}
+		   href={blogElements.link}
+		   target="_blank"
+		   rel="nofollow noopener noreferrer">
 			<div className={"blog-element-container"}>
 				<img className={"blog-image"} src={imageURL} alt={"blog-pic"} />
 				<div className={"blog-title"}>{blogElements.title}</div>
