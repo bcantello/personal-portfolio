@@ -13,18 +13,18 @@ import RSSParser from "rss-parser";
 function App() {
 	const [hamburgerToggle, setHamburgerToggle] = useState("open");
 	const [hamburgerToggleIcon, setHamburgerToggleIcon] = useState("hamburger-toggle");
-	const [blogArray, setBlogArray] = useState([])
+	const [blogArray, setBlogArray] = useState([]);
 
 	useEffect(() => {
-		const parser = new RSSParser()
+		const parser = new RSSParser();
 		const fetchPosts = async () => {
 			const proxyUrl = 'https://cantello-cors-anywhere.herokuapp.com/';
 			const url = `${proxyUrl}https://medium.com/feed/@brandoncantello/`;
 			const feed = await parser.parseURL(url);
 			setBlogArray(feed);
 		}
-		fetchPosts()
-	}, [])
+		fetchPosts();
+	}, []);
 
 	return (
 		<div className="App">
