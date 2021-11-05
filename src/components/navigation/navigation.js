@@ -37,6 +37,7 @@ export default function Navigation() {
 				{navLink("home", "Home")}
 				{navLink("about", "About")}
 				{navLink("projects", "Projects")}
+				{navLink("blog", "Blog")}
 				{navLink("contact", "Contact")}
 			</div>
 			<div id="hamburger">
@@ -49,6 +50,9 @@ export default function Navigation() {
 					</li>
 					<li>
 						{navLink("projects", "Projects")}
+					</li>
+					<li>
+						{navLink("blog", "Blog")}
 					</li>
 					<li>
 						{navLink("contact", "Contact")}
