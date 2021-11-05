@@ -1,20 +1,21 @@
 import {useState, createContext, useEffect} from "react";
-import './App.css';
+import RSSParser from "rss-parser";
 import SocialMediaAside from "./components/socialMediaAside/socialMediaAside";
 import EmailAside from "./components/emailAside/emailAside";
 import Home from "./pages/home/home";
 import About from "./pages/about/about";
 import Projects from "./pages/projects/projects";
+import Blog from "./pages/blog/blog";
 import FormspreeContact from "./pages/contact/formspreeContact";
 import Footer from "./components/footer/footer";
-import Blog from "./pages/blog/blog";
-import RSSParser from "rss-parser";
+import './App.css';
 
 function App() {
 	const [hamburgerToggle, setHamburgerToggle] = useState("open");
 	const [hamburgerToggleIcon, setHamburgerToggleIcon] = useState("hamburger-toggle");
 	const [blogArray, setBlogArray] = useState([]);
 
+	// Get RSS feed from Medium for Blog page
 	useEffect(() => {
 		const parser = new RSSParser();
 		const fetchPosts = async () => {
