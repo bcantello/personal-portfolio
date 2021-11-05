@@ -1,5 +1,5 @@
 import React from "react";
-import BlogList from "./blogList";
+import BlogCarousel from "./blogCarousel";
 
 export default function Blog() {
 	return (
@@ -12,7 +12,7 @@ export default function Blog() {
 					<div className="header-bar animation-element fade-up"/>
 				</div>
 				<div id={"blog-gallery"}>
-					<BlogList/>
+					<BlogCarousel/>
 				</div>
 			</div>
 		</section>
