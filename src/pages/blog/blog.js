@@ -7,7 +7,7 @@ export default function Blog() {
 			<div>
 				<div className="container flex" id="blog-header">
 					<div className="header animation-element fade-up">
-						BLOG
+						FEATURED BLOGS
 					</div>
 					<div className="header-bar animation-element fade-up"/>
 				</div>
