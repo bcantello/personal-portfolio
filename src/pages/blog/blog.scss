@@ -37,7 +37,20 @@
         color: #0A192F;
         font-size: 1.25em;
         height: 100px;
-        width: 300px;
+        width: 100%;
+
+        @media (min-width: 767px) {
+          font-size: 1.5em;
+        }
+      }
+    }
+
+    @media (min-width: 767px) and (max-width: 1023px) {
+      width: 650px;
+
+      .blog-carousel-image-wrapper {
+        height: 300px;
+        width: 650px;
       }
     }
 

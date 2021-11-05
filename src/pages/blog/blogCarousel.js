@@ -1,7 +1,7 @@
 import React, {useContext} from "react";
 import {UniversalContext} from "../../App";
-import "./blog.scss";
 import {Carousel} from "react-bootstrap";
+import "./blog.scss";
 
 export default function BlogCarousel() {
 	const context = useContext(UniversalContext);
