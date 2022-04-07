@@ -19,9 +19,9 @@ export default function BlogCarousel() {
 
 	if (blogs !== undefined) {
 		for (let i = 0; i < 6; i++) {
-			let content = blogs[i].content;
+			let content = blogs[i]["content:encoded"];
 			content = content.toString();
-			let imageURL = content.substring(content.indexOf("img src=") + 9, content.lastIndexOf("width") - 2);
+			let imageURL = content.substring(content.indexOf("src=") + 5, content.indexOf("/>") - 2);
 
 			blogArray.push(
 				<Carousel.Item>
