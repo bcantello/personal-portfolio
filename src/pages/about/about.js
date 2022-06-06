@@ -66,7 +66,7 @@ export default function About() {
 										href="https://www.peoplesvoiceproject.com/"
 										target="_blank"
 										rel="nofollow noopener noreferrer"> a student lead voting activism initiative</a>
-									. Currently I am a Developer at CIO Technologies where I work on their
+									. Currently I am a Sofware Engineer at Extensiv where I work on their
 									<a
 										href="https://www.cartrover.com"
 										target="_blank"
@@ -79,6 +79,7 @@ export default function About() {
 								</div>
 								<ul className="about-skills-container general-text">
 									<li className="about-skills-item">React</li>
+									<li className="about-skills-item">Vue 3</li>
 									<li className="about-skills-item">JavaScript</li>
 									<li className="about-skills-item">HTML & CSS</li>
 									<li className="about-skills-item">PHP</li>
