@@ -2,11 +2,11 @@ import {useState, createContext, useEffect} from "react";
 import RSSParser from "rss-parser";
 import SocialMediaAside from "./components/socialMediaAside/socialMediaAside";
 import EmailAside from "./components/emailAside/emailAside";
-import Home from "./pages/home/home";
-import About from "./pages/about/about";
-import Projects from "./pages/projects/projects";
-import Blog from "./pages/blog/blog";
-import FormspreeContact from "./pages/contact/formspreeContact";
+import Home from "./sections/home/home";
+import About from "./sections/about/about";
+import Projects from "./sections/projects/projects";
+import Blog from "./sections/blog/blog";
+import FormspreeContact from "./sections/contact/formspreeContact";
 import Footer from "./components/footer/footer";
 import './App.css';
 
